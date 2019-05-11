@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav">
+      <gvueinput></gvueinput>
+    </div>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import gvueinput from './components/input'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    gvueinput,
   }
 }
 </script>
